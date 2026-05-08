@@ -334,7 +334,7 @@ def main():
     st.title("LinkedIn Posting Intelligence")
     st.caption("Basé sur tes vraies données scrappées · 1 573 posts · 64 créateurs")
 
-    df_raw = load("linkedIn_post .csv")
+    df_raw = load("linkedIn_post.csv")
     df, sel_author, sel_cat, sel_years, sel_type, metric = sidebar(df_raw)
     df_f = apply_filters(df, sel_author, sel_cat, sel_years, sel_type)
 
